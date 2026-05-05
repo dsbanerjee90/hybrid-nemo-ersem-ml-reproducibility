@@ -1,0 +1,5 @@
+# HYB-PI path configuration for packaged input data.
+# Expected input:
+#   data/raw_external/Bouman_2017_merged_sstC_windSpeed_ssrd_full.csv
+
+csv_file: "data/raw_external/Bouman_2017_merged_sstC_windSpeed_ssrd_full.csv"

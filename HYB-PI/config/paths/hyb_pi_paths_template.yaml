@@ -1,0 +1,5 @@
+# HYB-PI path configuration template.
+# Copy this file to hyb_pi_paths_local.yaml and edit paths for your machine.
+# Do not commit hyb_pi_paths_local.yaml.
+
+csv_file: "/path/to/Bouman_2017_merged_sstC_windSpeed_ssrd_full.csv"

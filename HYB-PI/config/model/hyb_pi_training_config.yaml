@@ -1,0 +1,11 @@
+experiment_name: "HYB-PI"
+
+training:
+  log_targets: true
+  f_par: 0.45
+  no_low_light_drop: false
+  n_trials: 50
+  seed: 42
+
+outputs:
+  outdir: "outputs"

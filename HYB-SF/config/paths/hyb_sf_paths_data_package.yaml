@@ -1,0 +1,19 @@
+# HYB-SF path configuration for the packaged NetCDF input data.
+# Expected data layout:
+#   data/raw_external/
+
+ersem_root: "data/raw_external/ERSEM"
+scope_root: "data/raw_external/SCOPE/scope_on_ersem"
+par_root: "data/raw_external/FEATURES/PAR/unit_wm-2"
+sst_root: "data/raw_external/FEATURES/SST"
+wind_root: "data/raw_external/FEATURES/WINDSP10M"
+sss_root: "data/raw_external/FEATURES/SSS"
+depth_file: "data/raw_external/FEATURES/STATIC/depth_amm7.nc"
+
+templates:
+  ersem: "ersem_pp_{YYYY}{MM}.nc"
+  scope: "scope_gpp_on_ersem_{YYYY}{MM}.nc"
+  par: "par_on_ersem_24h_wm2_{YYYY}{MM}.nc"
+  sst: "sst_on_ersem_C_{YYYY}{MM}.nc"
+  wind: "wind10m_on_ersem_ms_{YYYY}{MM}.nc"
+  sss: "sss_on_ersem_psu_{YYYY}{MM}.nc"

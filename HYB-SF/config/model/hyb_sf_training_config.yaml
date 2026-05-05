@@ -1,0 +1,41 @@
+experiment_name: "HYB-SF"
+
+time_period:
+  start_year: 2000
+  start_month: 3
+  end_year: 2015
+  end_month: 12
+  train_end_year: 2012
+  val_end_year: 2014
+
+filters:
+  min_ersem: 1.0e-3
+  scale_min: 0.05
+  scale_max: 6.0
+  shelf_depth: 200.0
+
+weighting:
+  tail_frac: 0.25
+  tail_w: 3.0
+  use_uncertainty: true
+  unc_max: 200
+
+model:
+  algorithm: "HistGradientBoostingRegressor"
+  loss: "squared_error"
+  learning_rate: 0.06
+  max_depth: 6
+  max_iter: 400
+  l2_regularization: 1.0e-3
+  min_samples_leaf: 100
+  validation_fraction: 0.1
+  early_stopping: true
+  random_seed: 42
+
+outputs:
+  model_out: "models/gpp_scale_model_log_shelf.joblib"
+  scaler_out: "models/gpp_scale_scaler_log_shelf.joblib"
+  bundle_out: "models/gpp_scale_bundle_log_shelf.joblib"
+  report_out: "outputs/reports/gpp_scale_training_report_log_shelf.json"
+  diag_plot: "outputs/diagnostics/gpp_scale_diagnostics.png"
+  shap_beeswarm_plot: "outputs/shap/gpp_scale_shap_beeswarm.png"

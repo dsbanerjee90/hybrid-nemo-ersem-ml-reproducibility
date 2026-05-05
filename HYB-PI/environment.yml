@@ -1,0 +1,15 @@
+name: hyb-pi
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - joblib
+  - optuna
+  - pyyaml
+  - pip
+  - pip:
+      - shap

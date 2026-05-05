@@ -1,0 +1,14 @@
+name: hyb-sf
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - numpy
+  - netcdf4
+  - scikit-learn
+  - joblib
+  - matplotlib
+  - pyyaml
+  - pip
+  - pip:
+      - shap

@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.ipynb_checkpoints/
+
+# Environments
+.env
+.venv/
+venv/
+nemo-ml/
+*.conda
+
+# Input data: keep out of GitHub
+data/raw_external/
+data/processed/
+*.csv
+*.nc
+*.nc4
+*.h5
+*.hdf5
+*.zarr/
+*.parquet
+*.npy
+*.npz
+
+# Model artefacts / generated outputs
+outputs/
+out_depth/
+*.joblib
+*.pkl
+*.pickle
+
+# Local path configs
+config/paths/hyb_pi_paths_local.yaml
+
+# Logs / temporary files
+logs/
+*.log
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

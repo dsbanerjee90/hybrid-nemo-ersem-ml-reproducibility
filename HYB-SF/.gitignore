@@ -1,0 +1,87 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.ipynb_checkpoints/
+
+# ============================================================
+# Environments
+# ============================================================
+.env
+.venv/
+venv/
+nemo-ml/
+*.conda
+
+# ============================================================
+# Large scientific data: DO NOT COMMIT TO GITHUB
+# Data should be uploaded separately to Zenodo / Figshare /
+# reviewer files / institutional storage.
+# ============================================================
+data/raw_external/
+data/processed/
+data/example_input/*.nc
+data/example_input/*.nc4
+data/example_input/*.h5
+data/example_input/*.hdf5
+data/example_input/*.zarr/
+*.nc
+*.nc4
+*.h5
+*.hdf5
+*.zarr/
+*.parquet
+*.npy
+*.npz
+
+# Keep metadata CSV/TXT optional, but ignore local manifests for now
+data/metadata/hyb_sf_input_manifest.csv
+data/metadata/hyb_sf_missing_inputs.txt
+
+# ============================================================
+# Trained model artefacts / binary objects
+# These should go to reviewer package / Zenodo, not GitHub.
+# ============================================================
+models/
+*.joblib
+*.pkl
+*.pickle
+
+# ============================================================
+# Generated outputs
+# ============================================================
+outputs/
+figures/generated/
+logs/
+
+# ============================================================
+# Local machine-specific configs
+# ============================================================
+config/paths/hyb_sf_paths_local.yaml
+
+# ============================================================
+# Local staging / copy / temporary scripts
+# Keep public repo clean.
+# ============================================================
+scripts/prepare_hyb_sf_input_data.py
+
+# Backups created during editing
+src/training/*backup*.py
+src/training/*before*.py
+src/training/*original*.py
+src/training/train_hyb_sf_original_local_paths.py
+src/training/train_hyb_sf_before_plot_cleanup.py
+src/training/train_hyb_sf_before_scatter_beeswarm_only.py
+
+# ============================================================
+# OS/editor
+# ============================================================
+.DS_Store
+.vscode/
+.idea/
+
+# Local metadata utility used to update NetCDF global attributes
+local_tools/
