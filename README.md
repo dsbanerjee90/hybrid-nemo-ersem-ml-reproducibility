@@ -51,4 +51,6 @@ Generated outputs are written to:
 
 ## Notes
 
-The code is provided for scholarly review and reproducibility of the associated manuscript. Original source-data ownership, licences and citation requirements remain with the original data providers.
+The code in this repository is released under the BSD 3-Clause License. See the LICENSE file for details.
+
+Original source-data ownership, licences and citation requirements remain with the original data providers.

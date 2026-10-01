@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Hybrid NEMO-FABM-ERSEM machine-learning reproducibility workflows"
+version: 1.0.0
+date-released: 2026-10-01
+license: BSD-3-Clause
+repository-code: "https://github.com/dsbanerjee90/hybrid-nemo-ersem-ml-reproducibility"
+
+authors:
+  - family-names: "Banerjee"
+    given-names: "Deep S."
+  - family-names: "Blackford"
+    given-names: "Jerry"
+  - family-names: "Kulk"
+    given-names: "Gemma"
+  - family-names: "Sathyendranath"
+    given-names: "Shubha"
+  - family-names: "Bruggeman"
+    given-names: "Jorn"
+  - family-names: "Meek"
+    given-names: "Elin"
+  - family-names: "Bouman"
+    given-names: "Heather A."
+
+preferred-citation:
+  type: software
+  title: "Hybrid NEMO-FABM-ERSEM machine-learning reproducibility workflows"
+  authors:
+    - family-names: "Banerjee"
+      given-names: "Deep S."
+    - family-names: "Blackford"
+      given-names: "Jerry"
+    - family-names: "Kulk"
+      given-names: "Gemma"
+    - family-names: "Sathyendranath"
+      given-names: "Shubha"
+    - family-names: "Bruggeman"
+      given-names: "Jorn"
+    - family-names: "Meek"
+      given-names: "Elin"
+    - family-names: "Bouman"
+      given-names: "Heather A."
+  version: 1.0.0
+  year: 2026
