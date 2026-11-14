@@ -1,0 +1,17 @@
+Dual HGBR (10+1-feature, Optuna-tuned) — TRAINED ONLY ON ROWS WITH alpha_raw ≤ 0.12
+N=2000  features=['sin_lon', 'cos_lon', 'Latitude', 'depth_m', 'daylength_h', 'sin_doy', 'cos_doy', 'sst_C', 'wind_speed_ms', 'PAR_Wm2', 'sst_x_PAR']
+log_targets=True
+Best Optuna params:
+  loss: absolute_error
+  learning_rate: 0.24426977245306591
+  max_iter: 392
+  max_leaf_nodes: 50
+  min_samples_leaf: 30
+  l2_regularization: 9.300902518823707e-07
+  max_depth: 9
+
+Holdout (same split used in Optuna, train-only fit): alpha R2=0.471 MAE=0.01089 | Pmb R2=0.543 MAE=0.92024
+CV(5-fold, best hyperparams): alpha R2 0.414±0.035; Pmb R2 0.531±0.025
+alpha MAE 0.01124±0.00060; Pmb MAE 0.91331±0.02704
+Saved model: /data/proteus4/backup/dba/Documents/PML/Scylla/ADVHYBR-projects/hybrid_model_reproducibility/HYB-PI/outputs/best_model_optuna.joblib
+Saved Optuna study: /data/proteus4/backup/dba/Documents/PML/Scylla/ADVHYBR-projects/hybrid_model_reproducibility/HYB-PI/outputs/optuna_study.joblib
