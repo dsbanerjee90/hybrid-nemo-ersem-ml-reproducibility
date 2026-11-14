@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata below."
 title: "Hybrid NEMO-FABM-ERSEM machine-learning reproducibility workflows"
-version: 1.0.0
-date-released: 2026-10-01
+version: 1.1.0
+date-released: 2026-11-14
 license: BSD-3-Clause
 repository-code: "https://github.com/dsbanerjee90/hybrid-nemo-ersem-ml-reproducibility"
 
@@ -40,5 +40,5 @@ preferred-citation:
       given-names: "Elin"
     - family-names: "Bouman"
       given-names: "Heather A."
-  version: 1.0.0
+  version: 1.1.0
   year: 2026

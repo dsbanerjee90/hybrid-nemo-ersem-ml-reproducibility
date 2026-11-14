@@ -1,0 +1,94 @@
+{
+  "features": [
+    "sst",
+    "par",
+    "wind10m",
+    "sss",
+    "lon",
+    "lat",
+    "depth",
+    "daylength_h",
+    "par_day",
+    "wind2",
+    "log1p_depth",
+    "sst_x_par",
+    "month_sin",
+    "month_cos"
+  ],
+  "numeric_scaled": 12,
+  "target": "z = log(SCOPE_GPP / ERSEM_gpp_zeu)",
+  "data_period": {
+    "start": "2000-03",
+    "end": "2015-12"
+  },
+  "split": {
+    "train_end_year": 2012,
+    "val_end_year": 2014,
+    "N_train": 561779,
+    "N_val": 92571,
+    "N_test": 42947
+  },
+  "filters": {
+    "shelf_depth_m": 200.0,
+    "min_ersem": 0.001,
+    "scale_min": 0.05,
+    "scale_max": 6.0
+  },
+  "tail": {
+    "frac": 0.25,
+    "weight": 3.0,
+    "thr_linear": 1.1937557458877563
+  },
+  "uncertainty": {
+    "used": true,
+    "unc_max": 200.0
+  },
+  "metrics": {
+    "log": {
+      "train": {
+        "MAE": 0.2560175910153435,
+        "RMSE": 0.3309868404721111,
+        "R2": 0.8830855409700717
+      },
+      "val": {
+        "MAE": 0.31984899268841377,
+        "RMSE": 0.41234085983620705,
+        "R2": 0.8281970167203683
+      },
+      "test": {
+        "MAE": 0.2777947840785085,
+        "RMSE": 0.3540950016639214,
+        "R2": 0.8634339053683067
+      }
+    },
+    "linear": {
+      "train": {
+        "MAE": 0.24989122835839958,
+        "RMSE": 0.4548956959147821,
+        "R2": 0.8545173182253387
+      },
+      "val": {
+        "MAE": 0.3013835998401607,
+        "RMSE": 0.544328083838571,
+        "R2": 0.7940679080259464
+      },
+      "test": {
+        "MAE": 0.2705603372646176,
+        "RMSE": 0.49925527285792065,
+        "R2": 0.8248421977834868
+      }
+    }
+  },
+  "model": "HistGradientBoostingRegressor",
+  "model_parameters": {
+    "loss": "squared_error",
+    "learning_rate": 0.06,
+    "max_depth": 6,
+    "max_iter": 400,
+    "l2_regularization": 0.001,
+    "min_samples_leaf": 100,
+    "validation_fraction": 0.1,
+    "early_stopping": true,
+    "random_state": 42
+  }
+}
